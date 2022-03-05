@@ -1,0 +1,22 @@
+{
+  "name": "queue-testes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:jobs": "ts-node-dev --respawn -- src/StartQueue.ts",
+    "dev:serve": "ts-node-dev --respawn -- src/serve.ts"
+  },
+  "devDependencies": {
+    "@types/bull-arena": "^3.0.5",
+    "@types/redis": "^4.0.11",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "bee-queue": "^1.4.0",
+    "bull-arena": "^3.29.3",
+    "express": "^4.17.3",
+    "redis": "^4.0.4"
+  }
+}
