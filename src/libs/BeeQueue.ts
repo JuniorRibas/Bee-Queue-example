@@ -26,7 +26,7 @@ export default {
     console.log("Adicioando a fila! ", data);
     return queueExist?.job
       .createJob(data)
-      .timeout(queueExist.options.timeout)
+      .delayUntil(queueExist.options.timeout)
       .retries(queueExist.options.retries)
       .save();
   },
